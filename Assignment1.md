@@ -56,7 +56,7 @@
     [slave-1]
     <slave1 ip>
     [slave-2]
-    <slave1 ip>
+    <slave2 ip>
     ```
 11. Ping the machines
     ```
@@ -71,7 +71,7 @@
     ---
     - name: Install Java on Slave1
       hosts: slave-1
-      become: yes
+      become: true
 
       tasks:
           - name: Install OpenJDK
@@ -81,7 +81,7 @@
     
     - name: Install mysql on Slave1
       hosts: slave-2
-      become: yes
+      become: true
 
       tasks:
           - name: Install mysql
