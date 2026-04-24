@@ -79,7 +79,7 @@
               name: openjdk-17-jdk
               state: latest
     
-    - name: Install mysql on Slave1
+    - name: Install mysql on Slave2
       hosts: slave-2
       become: true
 
